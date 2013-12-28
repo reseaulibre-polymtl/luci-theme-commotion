@@ -1191,12 +1191,6 @@ table.cbi-section-table td.cbi-section-table-cell {
   text-align: center;
   white-space: nowrap;
 }
-table#neighbors.cbi-section-table th.cbi-section-table-cell,
-table#conn_clients.cbi-section-table th.cbi-section-table-cell,
-table#neighbors.cbi-section-table td.cbi-section-table-cell,
-table#conn_clients.cbi-section-table td.cbi-section-table-cell {
-  text-align:center;
-}
 .cbi-value-description {
   display: inline;
   font: normal 1em Helvetica, Arial, sans-serif;
