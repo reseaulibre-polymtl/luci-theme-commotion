@@ -539,6 +539,7 @@ table th {
 }
 .cbi-section-table-titles th {
   border-bottom: 1px solid black;
+  text-align:center;
 }
 table td {
   vertical-align: top;
@@ -1227,7 +1228,7 @@ table.cbi-section-table input, table.cbi-section-table textarea, table.cbi-secti
   width: auto;
 }
 table.cbi-section-table td.cbi-section-table-cell {
-  text-align: right;
+  text-align: center;
   white-space: nowrap;
 }
 .cbi-value-description {
