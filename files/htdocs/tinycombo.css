@@ -40,6 +40,7 @@
 	color:#000000;
 	font-weight: bold;
 	text-align: center;
+	display: block;
 }
 
 #selected h3 a {
