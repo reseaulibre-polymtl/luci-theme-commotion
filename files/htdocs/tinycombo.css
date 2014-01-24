@@ -1,63 +1,61 @@
 .sb-container {
-	width: 100%;
-	overflow:hidden;
-	float:none;
-	background:#ffffff;
-	clear: both;
-	
+  width: 100%;
+  overflow:hidden;
+  float:none;
+  background:#ffffff;
+  clear: both;
 }
 
 .body-content {
-	overflow: auto;
+  overflow: auto;
 }
 
 .login {
-	margin:10px 10% auto 10%;
+  margin:10px 10% auto 10%;
 }
 
-
 .sb-btn {
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-o-box-sizing:border-box;
-	box-sizing:border-box;
-	width:100%;
-	margin:0 auto;
-	padding:2px 2px;
-	cursor:pointer;
-	border-bottom:2px solid #ffffff;
-	border-right:2px solid #ffffff;
-	border-left:2px solid #ffffff;
-	background:#00ffcf;
-	color: #000000;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+  width:100%;
+  margin:0 auto;
+  padding:2px 2px;
+  cursor:pointer;
+  border-bottom:2px solid #ffffff;
+  border-right:2px solid #ffffff;
+  border-left:2px solid #ffffff;
+  background:#00ffcf;
+  color: #000000;
 }
 
 #selected {
-	background: #877AED;
+  background: #877AED;
 }
 
 .sb-btn h3 a {
-	color:#000000;
-	font-weight: bold;
-	text-align: center;
+  color:#000000;
+  font-weight: bold;
+  text-align: center;
 }
 
 #selected h3 a {
-	color:#ffffff;
-	font-weight: bold;
-	text-align: center;
+  color:#ffffff;
+  font-weight: bold;
+  text-align: center;
 }
 
 .submenutitle a {
-	font: 16px 'Helvetica', 'Arial', sans-serif;
-	color: #877AED;
-	font-weight: bold;
+  font: 16px 'Helvetica', 'Arial', sans-serif;
+  color: #877AED;
+  font-weight: bold;
 }
 
 .submenu li {
-	font: 16px 'Helvetica', 'Arial', san-serif;
-	color: #877AED;
-	font-weight: bold;
+  font: 16px 'Helvetica', 'Arial', san-serif;
+  color: #877AED;
+  font-weight: bold;
 }
 
 topbar * li {
@@ -109,7 +107,7 @@ article, aside, details, figcaption, figure, footer, header, topbar, hgroup, nav
   display: block;
 }
 #maincontent {
-	padding-top: 5px;
+  padding-top: 5px;
 }
 sub, sup {
   font-size: 75%;
@@ -159,6 +157,7 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 }
 input[type="search"] {
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
 }
 textarea {
   overflow: auto;
@@ -225,7 +224,7 @@ a:hover {
   text-decoration: underline;
 }
 .body-content {
-	width:100%;
+  width:100%;
 }
 .pull-right {
   float: right;
@@ -247,10 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   color: #404040;
 }
-/* Source of 90% of my link colour errors -_-
- * h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: black;
-} */
+
 h1 {
   font-size: 30px;
   line-height: 36px;
@@ -263,14 +259,11 @@ h2 {
   font-size: 25px;
   line-height: 36px;
 }
-h2 small {
+h2 small, h3 small, h5 {
   font-size: 14px;
 }
 h3 {
   font-size: 18px;
-}
-h3 small {
-  font-size: 14px;
 }
 h4 {
   font-size: 16px;
@@ -278,9 +271,7 @@ h4 {
 h4 small {
   font-size: 12px;
 }
-h5 {
-  font-size: 14px;
-}
+
 h6 {
   color: #BFBFBF;
   font-size: 13px;
@@ -319,12 +310,8 @@ dl dd {
   margin-left: 9px;
 }
 hr {
-  -moz-border-bottom-colors: none;
-  -moz-border-image: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  border-color: -moz-use-text-color -moz-use-text-color #EEEEEE;
+  border-color: -moz-use-text-color #EEEEEE;
+  border-color: #EEEEEE;
   border-style: none none solid;
   border-width: 0 0 1px;
   margin: 20px 0 19px;
@@ -335,8 +322,6 @@ strong {
 }
 em {
   font-style: italic;
-  font-weight: inherit;
-  line-height: inherit;
 }
 small {
   font-size: 0.9em;
@@ -484,6 +469,7 @@ textarea {
 }
 input, textarea {
   -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  -webkit-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
 }
 input:focus, textarea:focus {
@@ -692,7 +678,7 @@ header nav > ul.secondary-nav, header nav > ul.secondary-nav {
   float: left;
 }
 .tabs > li > a, .cbi-tabmenu > li > a {
-	display: block;
+  display: block;
 }
 .tabs, .cbi-tabmenu {
   border-color: #DDDDDD;
@@ -720,11 +706,6 @@ header nav > ul.secondary-nav, header nav > ul.secondary-nav {
   text-decoration: none;
 }
 .tabs .active > a, .tabs .active > a:hover, .cbi-tabmenu .active > a, .cbi-tabmenu .active > a:hover, .cbi-tab > a:link, .cbi-tab > a:hover {
-  -moz-border-bottom-colors: none;
-  -moz-border-image: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
   border-color: #DDDDDD #DDDDDD white;
   border-style: solid;
   border-width: 3px;
@@ -786,52 +767,52 @@ footer a:active, footer a:hover {
   padding: 0 5px;
 }
 #footermenu li.admin a {
-	display: inline-block;
-	background: transparent url(advanced_point.png) no-repeat top center;
-	padding: 4em 0 0 0;
-	font-weight: bold;
+  display: inline-block;
+  background: transparent url(advanced_point.png) no-repeat top center;
+  padding: 4em 0 0 0;
+  font-weight: bold;
 }
 #footermenu li.about a {
-	display: inline-block;
-	background: transparent url(about_point.png) no-repeat top center;
-	padding: 4em 1em 0 1em;
-	font-weight: bold;
+  display: inline-block;
+  background: transparent url(about_point.png) no-repeat top center;
+  padding: 4em 1em 0 1em;
+  font-weight: bold;
 }
 #footermenu li.help a {
-	display: inline-block;
-	background: transparent url(help_point.png) no-repeat top center;
-	padding: 4em 1em 0 1em;
-	font-weight: bold;
+  display: inline-block;
+  background: transparent url(help_point.png) no-repeat top center;
+  padding: 4em 1em 0 1em;
+  font-weight: bold;
 }
 #footermenu li.license a {
-	display: inline-block;
-	background: transparent url(license_point.png) no-repeat top center;
-	padding: 4em 1em 0 1em;
-	font-weight: bold;
+  display: inline-block;
+  background: transparent url(license_point.png) no-repeat top center;
+  padding: 4em 1em 0 1em;
+  font-weight: bold;
 }
 
 #welcome li {
-	display: inline-block;
-	font-weight: bold;
-	box-shadow: none;
+  display: inline-block;
+  font-weight: bold;
+  box-shadow: none;
 }
 #welcome li.setup a {
-	display: inline-block;
-	padding: 6.5em 2em 3em 2em;
-	background: transparent url(setupwiz_button.png) no-repeat top center;
-	background-size: 96px 96px;
+  display: inline-block;
+  padding: 6.5em 2em 3em 2em;
+  background: transparent url(setupwiz_button.png) no-repeat top center;
+  background-size: 96px 96px;
 }
 #welcome li.upload a {
-	background: transparent url(upload_config.png) no-repeat top center;
-	background-size: 96px 96px;
-	display: inline-block;
-	padding: 6.5em 2em 3em 2em;
+  background: transparent url(upload_config.png) no-repeat top center;
+  background-size: 96px 96px;
+  display: inline-block;
+  padding: 6.5em 2em 3em 2em;
 }
 #welcome li.advanced a {
-	background: transparent url(advanced_button.png) no-repeat top center;
-	background-size: 96px 96px;
-	display: inline-block;
-	padding: 6.5em 2em 3em 2em;
+  background: transparent url(advanced_button.png) no-repeat top center;
+  background-size: 96px 96px;
+  display: inline-block;
+  padding: 6.5em 2em 3em 2em;
 }
 
 /* buttons, styles likely from Flat UI and heavily modified */
@@ -867,8 +848,6 @@ footer a:active, footer a:hover {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
-.btn, .cbi-button {
-}
 .cbi-button-remove {
   float: right;
 }
@@ -933,35 +912,35 @@ footer a:active, footer a:hover {
 }
 
 .basic_menu .cbi-page-actions input.cbi-button {
-	display: inline-block;
-	padding: 3.5em 2em 0 2em;
-	font-weight: bold;
-	box-shadow: none;
+  display: inline-block;
+  padding: 3.5em 2em 0 2em;
+  font-weight: bold;
+  box-shadow: none;
 }
 
 .basic_menu .cbi-page-actions .cbi-button:hover {
-	color: #FF6699;
+  color: #FF6699;
 }
 
 .basic_menu .cbi-page-actions .cbi-button-save, .basic_menu .cbi-page-actions .cbi-button-apply, .basic_menu .cbi-page-actions .cbi-fake-finish, .basic_menu .cbi-page-actions  .cbi-button-finish {
-	background: transparent url(approve_app_button.png) no-repeat top center;
-	background-size: 48px 48px;
+  background: transparent url(approve_app_button.png) no-repeat top center;
+  background-size: 48px 48px;
 }
 .basic_menu .cbi-page-actions .cbi-button-reset, .basic_menu .cbi-page-actions .inline .cbi-button-reset {
-	background: transparent url(commotion_delete_icon.png) no-repeat top center;	
-	background-size: 48px 48px;
+  background: transparent url(commotion_delete_icon.png) no-repeat top center;  
+  background-size: 48px 48px;
 }
 .basic_menu .cbi-page-actions  .cbi-button-next, .basic_menu .cbi-page-actions .cbi-button-skip {
-	background: transparent url(right_arrow_button.png) no-repeat top center;
-	background-size: 48px 48px;
+  background: transparent url(right_arrow_button.png) no-repeat top center;
+  background-size: 48px 48px;
 }
 .basic_menu .cbi-page-actions .cbi-button-back, .basic_menu .cbi-page-actions .cbi-button-make-changes {
-	background: transparent url(left_arrow_button.png) no-repeat top center;
-	background-size: 48px 48px;
+  background: transparent url(left_arrow_button.png) no-repeat top center;
+  background-size: 48px 48px;
 }
 .basic_menu .cbi-page-actions .cbi-button-admin {
-	background: transparent url(advanced_button.png) no-repeat top center;
-	background-size: 48px 48px;
+  background: transparent url(advanced_button.png) no-repeat top center;
+  background-size: 48px 48px;
 }
 
 .Startup .cbi-section-table input.cbi-input-apply, .Startup .cbi-section-table input.cbi-button-apply {
@@ -986,49 +965,45 @@ footer a:active, footer a:hover {
   background-image: url("./resources/cbi/save.gif");
   background-position: 7px 4px;
 }
-:root .alert, *:root .btn {
-}
+
 button.btn::-moz-focus-inner, input.btn[type="submit"]::-moz-focus-inner {
   border: 0 none;
   padding: 0;
 }
  
 .status-bar {
-	overflow: auto;
-	padding: 0.5em;
+  overflow: auto;
+  padding: 0.5em;
 }
 
 .info-list {
-	margin-left: auto;
-	margin-right: auto;
-	width: 13em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 13em;
 }
 .iface-info {
-	width:100%;
-	margin-left: auto;
-	margin-right: auto;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-.status-bar td.key-item {
-	color:black;
-	font-weight: bold;
-	font-size:1em;
-}
 .status-bar td {
-	background-color:#FFFFFF;
-	color:#FF6699;
-	padding: 0.3em;
-	font-weight: bold;
-	font-size:1em;
+  background-color:#FFFFFF;
+  color:#FF6699;
+  padding: 0.3em;
+  font-weight: bold;
+  font-size:1em;
+}
+.status-bar td.key-item {
+  color:black;
 }
 
 /* node name and mesh ip address */
 
 #nodeinfo {
-	overflow: auto;
-	padding: 0.5em;
-	margin-top: 10px;
+  overflow: auto;
+  padding: 0.5em;
+  margin-top: 10px;
 }
 
 td.hug-right {
@@ -1043,16 +1018,16 @@ td.hug-left {
 text-align:left;
 }
 #nodeinfo td.key-item {
-	color:black;
-	font-weight: bold;
-	font-size:1em;
+  color:black;
+  font-weight: bold;
+  font-size:1em;
 }
 #nodeinfo td {
-	background-color:#FFFFFF;
-	color:#FF6699;
-	padding: 0.3em;
-	font-weight: bold;
-	font-size:1em;
+  background-color:#FFFFFF;
+  color:#FF6699;
+  padding: 0.3em;
+  font-weight: bold;
+  font-size:1em;
 }
 
 /* end node name */
@@ -1141,7 +1116,6 @@ a.label:hover {
 
 }
 a.label.notice {
-  background-color: /*#66ccff*/;
   color: black;
   padding: 3px;
 }
