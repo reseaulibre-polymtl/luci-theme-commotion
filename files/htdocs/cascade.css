@@ -66,7 +66,7 @@ button, input, select, textarea {
 
 textarea {
   max-width: 98%;
-  margin 10px 0 10px 0;
+  margin 10px 0px 10px 0px;
 }
 
 button, input {
@@ -370,6 +370,8 @@ form .cbi-value label.cbi-value-title.tippable {
   margin: 10px 0 0 0;
   display: none;
 }
+
+/* This should be re-written to be W3C compliant at some point */
 .tip:after {
   bottom: 100%;
   border: solid transparent;
@@ -577,6 +579,12 @@ table#neighbors.cbi-section-table th.cbi-section-table-cell,
 table#neighbors.cbi-section-table td.cbi-section-table-cell {
   text-align:center;
 }
+
+/* Connected Clients table */
+table#conn_clients.cbi-section-table th.cbi-section-table-cell {
+  text-align: center;
+}
+
 header {
   color: #BFBFBF;
   overflow: visible;
@@ -1256,9 +1264,12 @@ header .pull-right {
   margin-right: 6px;
   margin-top: 8px;
 }
+
 table table td, .cbi-value-field table td {
-  border: medium none;
+  border-right: 1px solid #fff;
+  text-align: center;
 }
+
 table.cbi-section-table input, table.cbi-section-table textarea, table.cbi-section-table select {
   width: auto;
 }
