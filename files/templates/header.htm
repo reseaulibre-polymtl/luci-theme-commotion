@@ -97,20 +97,32 @@ You may obtain a copy of the License at
   end
   mesh_ip = "None"
   uci:foreach("wireless", "wifi-iface",
-			  function(s)
-				 if s and s.mode and s.mode == "adhoc" and s.network then
-					local iface = conn:call("network.interface."..s.network, "status", {})
-					if iface ~= nil and iface["ipv4-address"] then
-					   if iface["ipv4-address"][1] and iface["ipv4-address"][1].address then
-       						  mesh_ip = iface["ipv4-address"][1].address
-					   else
-						  mesh_ip = "Unknown"
-					   end
-					elseif mesh_ip == "None" then
-					   mesh_ip = "Unknown"
+	function(s)
+		if s and s.mode and s.mode == "adhoc" and s.network then
+			local iface = conn:call("network.interface."..s.network, "status", {})
+			if iface ~= nil then
+			-- We get the ipAddress according to the routing protocol selected
+			-- right now if Babel is the protocol, IPv6 is used and if OLSR is
+			-- in use, IPv4 is used. Eventually, if IP version becomes independent
+			-- of the protocol used, the logic will have to be changed
+				if s.proto == "babel" and iface["l3_device"] then
+				-- The ipv6-address field exists, but the current integration
+				-- of Babel uses the link-local address of the mesh interface.
+				-- Thus, the field is empty in iface. l3_device is the name of
+				-- the physical interface used by the mesh.
+					mesh_ip = sys.exec("ip addr show dev '"..iface["l3_device"].."' | sed -e's/^.*inet6 \\([^ ]*\\)\\/.*$/\\1/;t;d'")
+				elseif iface["ipv4-address"] then
+					if iface["ipv4-address"][1] and iface["ipv4-address"][1].address then
+						mesh_ip = iface["ipv4-address"][1].address
+					else
+						mesh_ip = "Unknown"
 					end
-				 end
-			  end
+				else
+					mesh_ip = "Not available"
+				end
+			end
+		end
+	end
   )
   conn:close()
 	 -%>
