@@ -585,6 +585,10 @@ table#conn_clients.cbi-section-table th.cbi-section-table-cell {
   text-align: center;
 }
 
+td.cbi-section-table-cell {
+  border-right: 1px solid #ffffff;
+}
+
 header {
   color: #BFBFBF;
   overflow: visible;
@@ -1273,10 +1277,7 @@ table table td, .cbi-value-field table td {
 table.cbi-section-table input, table.cbi-section-table textarea, table.cbi-section-table select {
   width: auto;
 }
-table.cbi-section-table td.cbi-section-table-cell {
-  text-align: right;
-  white-space: nowrap;
-}
+
 .cbi-value-description {
   display: inline;
   font: normal 14px/16px Helvetica, Arial, sans-serif;
